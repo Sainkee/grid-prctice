@@ -95,36 +95,36 @@ p {
   color: #76787c;
 }
 
-@media only screen and (max-width: 440px) {
-  #main {
-    grid-template-areas:
-      "item1"
-      "item2"
-      " item3"
-      "item4"
-      "item5";
-    padding: 10px 30px;
-  }
-}
+
 
 @media only screen and (max-width: 1200px) {
   #main {
     grid-template-areas:
-    "item1 item1 item1 item2"
-    "item3 item3 item3 item3"
-    "item4 item5 item5 item5";
-}
+      "item1 item1 item1 item2"
+      "item3 item3 item3 item3"
+      "item4 item5 item5 item5";
+  }
 }
 
 @media only screen and (max-width: 862px) {
   #main {
     grid-template-areas:
-    "item1 item1  item1"
-    "item2 item2  item3"
-    "item4 item4 item3"
-    "item5 item5 item5 ";
+      "item1 item1  item1"
+      "item2 item2  item3"
+      "item4 item4 item3"
+      "item5 item5 item5 ";
     padding: 10px 30px;
+  }
 }
 
-
+@media only screen and (max-width: 440px) {
+  #main {
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5";
+    padding: 10px 30px;
+  }
 }
