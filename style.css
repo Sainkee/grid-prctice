@@ -1,0 +1,130 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html {
+  font-size: 14.3px;
+  background-color: #cee2f6;
+}
+#main {
+  display: grid;
+  grid-template-areas:
+    "item1 item1 item2 item3"
+    "item4 item5 item5 item3";
+
+  gap: 20px;
+  padding: 50px 150px;
+
+  color: white;
+  line-height: 1.5em;
+  font-family: sans-serif;
+}
+#main div {
+  border-radius: 5px;
+}
+img {
+  border-radius: 50px;
+  height: 40px;
+  margin-right: 10px;
+}
+.item1 {
+  background-color: #7541c8;
+  grid-area: item1;
+  background-image: url(https://kabir-sagiii.github.io/CSS_Grid_learn-grid-the-easy-way/images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: top right 5%;
+}
+.p-10 {
+  padding-top: 10px;
+}
+.block {
+  color: #cccdcf;
+}
+blockquote {
+  font-size: 0.8rem;
+}
+.name {
+  font-size: 1rem;
+}
+.post {
+  color: rgba(255, 255, 255, 0.775);
+  font-size: 0.8rem;
+}
+.title {
+  font-size: 1.3rem;
+}
+p {
+  font-size: 0.5rem;
+}
+.item1,
+.item2,
+.item3,
+.item4,
+.item5 {
+  padding: 20px 40px;
+}
+.item2 {
+  grid-area: item2;
+  background-color: #48556a;
+}
+.item3 {
+  grid-area: item3;
+  background-color: #ffffff;
+  color: #48556a;
+}
+.item4 {
+  grid-area: item4;
+  background-color: #ffffff;
+  color: #48556a;
+}
+.item5 {
+  grid-area: item5;
+  background-color: #19212e;
+}
+.flex {
+  display: flex;
+}
+.item3 .post {
+  color: rgb(145, 136, 136);
+  color: #76787c;
+}
+.item4 .post {
+  color: rgb(145, 136, 136);
+  color: #76787c;
+}
+
+@media only screen and (max-width: 440px) {
+  #main {
+    grid-template-areas:
+      "item1"
+      "item2"
+      " item3"
+      "item4"
+      "item5";
+    padding: 10px 30px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #main {
+    grid-template-areas:
+    "item1 item1 item1 item2"
+    "item3 item3 item3 item3"
+    "item4 item5 item5 item5";
+}
+}
+
+@media only screen and (max-width: 862px) {
+  #main {
+    grid-template-areas:
+    "item1 item1  item1"
+    "item2 item2  item3"
+    "item4 item4 item3"
+    "item5 item5 item5 ";
+    padding: 10px 30px;
+}
+
+
+}
